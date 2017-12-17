@@ -1,2 +1,2 @@
 # 3python.github.io
-testing how to make websites
+The code for the mainpage for my website
