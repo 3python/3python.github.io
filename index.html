@@ -9,80 +9,100 @@ to figure out how to make websites in html
 <head>
 <style>
 body {
-    background-color: LightSteelBlue;
+    background-color: #F5F5F5;
     font-family: "Calibri"
 }
-
 h1 {
     text-align: center;
-    color: BlueViolet;
+    color: Black;
     font-size: 250%;
     
 } 
-
 h2 {
    text-align: left;
-   color: BlueViolet;
+   color: Black;
    }
-   
+
+h3 {
+   text-align: left;
+   color: Black;
+   }   
+
+h4 {
+   text-align: left;
+   color: Red;
+   }
+
 p {
    text-align: justify;
-   color: white;
+   color: Black;
    }
    
-ul {
-   text-align: left;
-   color: white;
-   }
-li {
-   text-align: left;
-   color: white;
-   }
+a:link {
+    color: red; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+#header {
+    background-color: LightBlue;
+    border: 10px solid #707070;
+    padding: 10px;
+    margin: 25px;
+    font-size: 250%;
+    font-weight: bold;
+    color: #707070;
+    text-align: center;
+    
+}
+
+.container {
+    margin: auto;
+}
+#first {
+    background-color: LightGrey;
+    border: 10px solid #707070;
+    padding: 10px;
+    margin: 25px;
+    font-size: 100%;
+    color: #707070;
+
+}
 
 </style>
 </head>
 <html>
 <body>
-<header>
-<h1>Kate Benny</h1>
-<p>Click <a href="https://www.linkedin.com/in/kate-benny-92a48b150/">here</a> to view my linked in profile and CV.</p>
+
+
+
+<div id="header">
+    <div> <a href="https://www.linkedin.com/in/kate-benny-92a48b150/"style="color:black">Kate Benny</a></div>
+</div>
+
+<div id="first">
+
 </header>
 <br>
 <img src="hands.JPG" alt="Image of author wearing a yellow zip up hoodie and a height chart behind them measured in hands">
 <br>
 <br>
+</div>
+
+<div id="first">
+    <div class='container'>
 <header>
-<h2>Background</h2>
-<p>BSc in Geological Sciences</p>
-<p>Career mapping past global environments as part of the Globe team for <a href="https://getech.com/globe/"> Getech Group Plc</a> </p>
-</header>
-<br>
-<header>
-<h2>Research I have been involved in includes:</h2>
-<ul style="list-style-type:disc">
-   <li>A Reconstruction of Global Sediment Fluxes Since the Late Jurassic: Fact, Fiction or Wishful thinking? <a href="http://www.searchanddiscovery.com/abstracts/html/2011/annual/abstracts/Markwick.html"> Link<a/></li>
-   <li>New high-resolution geodynamic and landscape evolution models for Africa from the Permian to the present day. <a href="https://library.seg.org/doi/abs/10.1190/ice2016-6493784.1"> Link<a/>.</li>
-   <li>The Paleogeographic Evolution of the Arctic and North Atlantic Oceans during the Cretaceous. <a href="http://www.searchanddiscovery.com/abstracts/html/2011/3Parctic/abstracts/markwick.htm"> Link<a/></li>
-</ul>
-<br>
-<p>Studying River Basin Dynamics and Management with GIS MSc at the University of Leeds.</p>
-</header>
-<br>
-<header>
-<h2>Particular areas of interest are </h2>
-<ul style="list-style-type:disc">
-   <li>flood risk modelling</li>
-   <li>using computer programs to solve environmental problems</li> 
-   <li>spatial analysis of data</li>
-</ul>
-</header>
-<br>
-<header>
-<h2>Progamming experience</h2>
-<p>Studied a computing module in python programming. Details of the course content can be found <a href="http://www.geog.leeds.ac.uk/courses/computing/study/core-python/outline.html"> here<a>. It has taught me about the core python language and object orientation.</p>
-<br>
-<h3>Agent Based Model</h3>    
-<p>As part of this project. I have developed an agent based model.</p>
+<h1>Programming Projects</h1>
+
+<h4>By clicking on the project's title you will be re-directed to the project's Github page</h4>
+
+<p>These projects are part of the coursework for The University of Leeds, geography department's Programming for Spatial Analyst Modules.</p>
+<p>Details of the course content can be found <a href="http://www.geog.leeds.ac.uk/courses/computing/study/core-python/outline.html"> here<a> for the core module, and <a href="http://www.geog.leeds.ac.uk/courses/computing/study/advanced-python/"> here<a> for the advanced module.</p> 
+<p>To view my github website, click <a href="https://github.com/3python?tab=repositories">here<a></p>
+<p>If the above links fail, my username on github is 3python.</p>
+</div>
+
+<div><h3> <a href="https://github.com/3python/Agent-Based-Model"style="color:black">Agent Based Model</a><h3></div>
 <p>This model, mimics the effects of sheep randomly grazing an imaginary environment. The model does this by specifying a number of agents (sheep) to be generated, and a number of times they will graze (number of iterations).
 Starting locations for the agent (sheep) positions is then loaded into the script. A grid of numbers is also loaded into the script and converted into a list of number pairs of the format
 [[y0, x0],[y1, x1],[y2,x2] etc] which is used to represent the topography of the environment the sheep are grazing on.
@@ -91,10 +111,73 @@ of the sheep increases. If the sheep are within a certain distance of each other
 A visualisation of this model is then run showing the agents moving across the envrionment and a decreasing height of the environment as they eat into it.
 This model consits of two files. The model file, which is the script to be run and the class file called agentframework which defines the characteristics of the agent class. It consists of a set of functions to define i.e. how the sheep move,
  eat and share food between themselves. The agent class allows information to be passed into all the agents which enables the agents to know, for example what all the agents have eaten. </p>
-<br>
-<p>To view this model click this <a href="https://github.com/3python/Agent-Based-Model"> here<a></p>
-<p>To view my github website, click <a href="https://github.com/3python?tab=repositories">here<a></p>
-<p>If the above links fail, my username on github is 3python.</p>
+
+<div><h3><a href="https://github.com/3python/Flood-Model"style="color:black">Flood Model</a><h3></div>
+<p>Models how water would move and accumulate as it flows down a landscape. Simulated rain falls on the landscape, then half this rain is moved to the adjacent cell 
+with the the steepest downhill gradient. The model is then run the number of times by the user. The results are then plotted on a grid. This enables the user to 
+identify where likely location of rivers and wet areas.</p>
+
+<div><h3><a href="https://github.com/3python/Scripts-in-ArcGIS"style="color:black">Scripts in ArcGIS</a><h3></div>
+<p>A point shapefile, polygon file and buffer distance is entered into ArcGIS. The model then runs and outputs a polygon shapefile showing all the parts of the original
+polygon which are within the specified distance from the point. In this instance is it used to measure houses within a certain distance of an explosion point.</p>
+
+<div><h3><a href="https://github.com/3python/Addins"style="color:black">Addins in ArcGIS</a><h3></div>
+<p>This program creates GUIs within ArcGIS which allows the user to run the model by pressing a button and then informs them of the model's progress</p>
+
+<div><h3><a href="https://github.com/3python/GUI-Display-ArcGIS"style="color:black">Crime Model</a><h3></div>
+<p>This model calculates the number of times a property lies within a certain distance of another property that has been burgeled. It then colour codes the houses based on
+this value and colour codes the properties accordingly.</p>
+
+<div><h3><a href="https://github.com/3python/SQLIte"style="color:black">SQLite</a><h3></div>
+<p>Contains some basic database creation code and simple methods for converting data between various formats.</p>
+
+<div><h3><a href="https://github.com/3python/XML"style="color:black">XML</a><h3></div>
+<p>Processing geodata betwen file formats</p>
+
+<div><h3><a href="https://github.com/3python/pandas_bookeh"style="color:black">Pandas/Bookeh</a><h3></div>
+<p>Brief examples of how to use the pandas and bookeh modules in python using the worked examples from thier websites</p>
+
+<div><h3><a href="https://github.com/3python/NLTK"style="color:black">NLTK</a><h3></div>
+<p>Code which analyses a poem, extracts the proper nouns, assumes these are place names and tries to find their locations using googlemaps</p>
+
 </header>
+</div>
+
+<div id="first">
+    <div class='container'>
+<header>
+<h1>Academic Background</h1>
+
+<h3><b>MSc in River Basin Dynamics and Management with GIS</b></h3>
+<p>CIWEM accredited MSc. Covers hydrology, natural flood management, GIS, statistical analysis, programming in Python and R, and python programming in ArcGIS.</p> 
+</div>
+</div>
+
+<div id="first">
+    <div class='container'>
+<header>
+<h1>Career</h1>
+<h3>Geologist</h3>
+<p>Company Name: Getech</p>
+<p>Dates Employed: Apr 2009 – Jul 2017  </p>
+<p>Employment Duration: 8 yrs 4 mos</p>
+<p>Location: Leeds, United Kingdom</p>
+<p>During my time at Getech Group Plc, I have worked in 3 roles.</p>
+<br>
+<p>Plate Modeller: Researching the location of tectonic plates through time to contribute to the company's plate model, particularly around South East Asia and western China.</p> 
+<p>Editing the current plate model via interfacing between notepad++, GPlates and Arc PalaeoGIS.</p>
+<p>Developing methodology to reconstruct the depth of oceanic crust in palaeo-reconstructions of past global environments from 150-300 Ma when most oceanic crust of that age has subsequently been destroyed.</p>
+<br>
+<p>Structural Geologist: This role included:
+<p>Interpreting geological faults from gravity, magnetic and satellite data in ArcGIS.</p>
+<p>Determining the tectonic histories of geological faults through time. </p>
+<br>
+<p>Geologist: This role included:</p>
+<p>Producing a series of maps depicting past landscapes from 300 million years ago to present day. This involved extracting and interpreting data from academic papers and translating this into a visual resource using ArcGIS.</p>
+</h3>
+</div>
+</div>
+
+
 </body>
 </html>
